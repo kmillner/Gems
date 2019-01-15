@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<h1>Select a gem below:</h1>
+<br>
+
+#foreach($gem in $gems)
+<a href="/gem/$gem.getId()">
+    <img id = "myImage" src="$gem.getImgURL()" width="auto" height="336"
+         onmouseover="this.src='$gem.getImgURL2()';"
+         onmouseout="this.src='$gem.getImgURL()';">
+    </img>
+</a>
+
+#end
